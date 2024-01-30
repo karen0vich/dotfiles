@@ -1,0 +1,7 @@
+[user]
+	email = karlen.hayrapetyan75@gmail.com
+	name = karlen
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
