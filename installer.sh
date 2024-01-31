@@ -2,17 +2,6 @@
 
 sudo pacman -S zsh alacritty neovim tmux
 
-chsh -s /bin/zsh
-
-# Install Oh My Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# Install Zsh autosuggestions
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-
-# Install Zsh syntax highlighting
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-
 # Create and set up Alacritty theme directory
 mkdir -p ~/.config/alacritty/themes
 
@@ -27,6 +16,14 @@ cp .tmux/.tmux.conf.local .
 git clone https://github.com/tom-auger/cmdtime ~/.oh-my-zsh/custom/plugins 
 source ~/.zshrc
 
-
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Install Oh My Zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Install Zsh autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
+# Install Zsh syntax highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 
