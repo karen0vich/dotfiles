@@ -9,11 +9,6 @@ git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/theme
 
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 
-cd
-git clone https://github.com/gpakosz/.tmux.git
-ln -s -f .tmux/.tmux.conf
-cp .tmux/.tmux.conf.local .
-
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # Install Zsh autosuggestions
