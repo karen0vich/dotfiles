@@ -13,12 +13,13 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # Install Zsh autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-
 # Install Zsh syntax highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 
-git clone https://github.com/tom-auger/cmdtime ~/.oh-my-zsh/custom/plugins 
+git clone https://github.com/tom-auger/cmdtime $ZSH_CUSTOM/plugins/cmdtime
 
 source ~/.zshrc
+
+sudo pacman -S chezmoi
 
 chezmoi init --apply karen0vich
